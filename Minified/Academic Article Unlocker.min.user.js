@@ -32,8 +32,8 @@
   // @author      NoUser
   // @description Easily access open-access versions of academic articles with the click of a button. Say goodbye to paywalls and hello to knowledge.
   // @run-at      document-end
-  // @namespace   https://greasyfork.org/en/scripts/459616-academic-article-unlocker
-  // @homepage    https://greasyfork.org/en/scripts/459616-academic-article-unlocker
+  // @namespace   https://github.com/NyeUsr/Userscripts/raw/main/Minified/Academic%20Article%20Unlocker.min.user.js
+  // @homepage    https://github.com/NyeUsr/Userscripts/
   // @license     MIT
   // ==/UserScript==
 
