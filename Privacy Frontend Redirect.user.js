@@ -4,7 +4,7 @@
 // @exclude     *://account*/*
 // @exclude     *://messages.*/*
 // @grant       none
-// @version     3.2.4
+// @version     3.2.5
 // @author      NoUser
 // @description This script redirects to privacy friendly front-ends of popular services, such as YouTube, Twitter, Reddit, Imgur, Instagram, TikTok, etc. Additionally, it replaces iframes and outgoing links to non frontend services with their privacy-friendly counterparts. The purpose of this script is to protect the user's privacy by avoiding the collection of personal data by these services.
 // @run-at      document-start
@@ -18,8 +18,8 @@ const hosts = {
   "www.youtube.com": ["invidious.privacydev.net", "invidious.dhusch.de", "vid.puffyan.us", "inv.vern.cc", "invidious.kavin.rocks", "invidious.tiekoetter.com", "inv.riverside.rocks", "vid.priv.au", "invidious.snopyta.org", "iv.ggtyler.dev", "invidious.namazso.eu", "invidious.nerdvpn.de", "tube.cadence.moe"],
   "www.youtube-nocookie.com": ["invidious.privacydev.net", "invidious.dhusch.de", "vid.puffyan.us", "inv.vern.cc", "invidious.kavin.rocks", "invidious.tiekoetter.com", "inv.riverside.rocks", "vid.priv.au", "invidious.snopyta.org", "iv.ggtyler.dev", "invidious.namazso.eu", "invidious.nerdvpn.de", "tube.cadence.moe"],
   "m.youtube.com": ["invidious.privacydev.net", "invidious.dhusch.de", "vid.puffyan.us", "inv.vern.cc", "invidious.kavin.rocks", "invidious.tiekoetter.com", "inv.riverside.rocks", "vid.priv.au", "invidious.snopyta.org", "iv.ggtyler.dev", "invidious.namazso.eu", "invidious.nerdvpn.de", "tube.cadence.moe"],
-  "twitter.com": ["nitter.sneed.network", "canada.unofficialbird.com", "nitter.privacytools.io", "nitter.foss.wtf", "nitter.privacy.com.de", "nitter.1d4.us", "nitter.pussthecat.org", "nitter.poast.org", "twitter.censors.us"],
-  "mobile.twitter.com": ["nitter.sneed.network", "canada.unofficialbird.com", "nitter.privacytools.io", "nitter.foss.wtf", "nitter.privacy.com.de", "nitter.1d4.us", "nitter.pussthecat.org", "nitter.poast.org", "twitter.censors.us"],
+  "twitter.com": ["nitter.sneed.network", "canada.unofficialbird.com", "nitter.privacytools.io", "nitter.foss.wtf", "nitter.privacy.com.de", "nitter.1d4.us", "nitter.poast.org", "twitter.censors.us"],
+  "mobile.twitter.com": ["nitter.sneed.network", "canada.unofficialbird.com", "nitter.privacytools.io", "nitter.foss.wtf", "nitter.privacy.com.de", "nitter.1d4.us", "nitter.poast.org", "twitter.censors.us"],
   "www.reddit.com": ["libreddit.eu.org", "libreddit.spike.codes", "lr.odyssey346.dev", "rd.funami.tech", "libreddit.dcs0.hu", "lr.vern.cc", "www.troddit.com"],
   "imgur.com": ["rimgo.pussthecat.org", "rimgo.totaldarkness.net", "rimgo.vern.cc", "imgur.artemislena.eu", "rimgo.privacydev.net", "rimgo.bus-hit.me"],
   "i.imgur.com": ["rimgo.pussthecat.org", "rimgo.totaldarkness.net", "rimgo.vern.cc", "imgur.artemislena.eu", "rimgo.privacydev.net", "rimgo.bus-hit.me"],
