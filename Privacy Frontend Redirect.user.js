@@ -3,8 +3,10 @@
 // @match       *://*/*
 // @exclude     *://account*/*
 // @exclude     *://message*/*
+// @exclude     *://adsense.google.com/*
+// @exclude     *://www.google.com/adsense/*
 // @grant       none
-// @version     4.2.8
+// @version     4.2.9
 // @author      NoUser
 // @description This script redirects to privacy friendly front-ends of popular services, such as YouTube, Twitter, Reddit, Imgur, Instagram, TikTok, etc. Additionally, it replaces iframes and outgoing links to non frontend services with their privacy-friendly counterparts. The purpose of this script is to protect the user's privacy by avoiding the collection of personal data by these services.
 // @run-at      document-start
@@ -28,10 +30,10 @@ const hosts = {
   "www.instagram.com": ["bibliogram.froth.zone", "ig.tokhmi.xyz"],
   "www.tiktok.com": ["proxitok.pussthecat.org", "tok.habedieeh.re", "tok.artemislena.eu", "proxitok.privacydev.net"],
   "www.imdb.com": ["ld.vern.cc", "libremdb.esmailelbob.xyz", "lmdb.tokhmi.xyz", "libremdb.iket.me", "libremdb.pussthecat.org"],
-  "translate.google.com": ["simplytranslate.esmailelbob.xyz/?engine=google", "simplytranslate.org/?engine=google", "simplytranslate.manerakai.com/?engine=google", "translate.bus-hit.me/?engine=google", "translate.northboot.xyz/?engine=google", "translate.tiekoetter.com/?engine=google", "tl.vern.cc/?engine=google", "translate.slipfox.xyz/?engine=google"],
+  "translate.google.com": ["simplytranslate.esmailelbob.xyz", "simplytranslate.manerakai.com", "translate.bus-hit.me", "translate.northboot.xyz", "translate.tiekoetter.com", "tl.vern.cc", "translate.slipfox.xyz"],
   "medium.com": ["scribe.rip", "scribe.nixnet.services", "scribe.citizen4.eu", "scribe.bus-hit.me", "scribe.froth.zone", "scribe.rawbit.ninja"],
   "www.urbandictionary.com": ["rd.vern.cc", "ruraldictionary.esmailelbob.xyz"],
-  "stackoverflow.com": ["code.whatever.social", "overflow.777.tf", "ao.vern.cc", "overflow.smnz.de", "anonymousoverflow.esmailelbob.xyz", "overflow.adminforge.de", "ao.foss.wtf", "overflow.hostux.net"],
+  "stackoverflow.com": ["code.whatever.social", "ao.vern.cc", "overflow.smnz.de", "anonymousoverflow.esmailelbob.xyz", "overflow.adminforge.de", "ao.foss.wtf", "overflow.hostux.net"],
   "www.goodreads.com": ["biblioreads.ml", "bl.vern.cc", "biblioreads.esmailelbob.xyz"],
   "www.snopes.com": ["sd.vern.cc", "suds.esmailelbob.xyz"],
   "www.xvideos.com": ["porninvidious.esmailelbob.xyz"],
@@ -41,9 +43,18 @@ const hosts = {
   "www.instructables.com": ["destructables.esmailelbob.xyz"],
   "www.reuters.com": ["neuters.de", "neuters.esmailelbob.xyz"],
   "scratch.mit.edu": ["scratchgui.esmailelbob.xyz", "scratch.machinelearningforkids.co.uk"],
-  "odysee.com": ["lbry.projectsegfau.lt", "librarian.esmailelbob.xyz"]
-//  "amazon.com": ["simpleamazon.esmailelbob.xyz"],
+  "odysee.com": ["lbry.projectsegfau.lt", "librarian.esmailelbob.xyz"],
+  "yiffer.xyz": ["yiffest.programmerpony.com"],
+  "www.wolframalpha.com": ["wolfree.chickenkiller.com", "wolfree.crabdance.com", "wolfree.gitlab.io", "wolfree.ignorelist.com", "wolfree.jumpingcrab.com", "wolfree.my.to", "wolfree.netlify.app", "wolfree.onrender.com", "wolfree.pages.dev", "wolfree.privatedns.org", "wolfree.strangled.net"],
+  "quizlet.com": ["requiz.net"],
+//  "amazon.com": ["simpleamazon.esmailelbob.xyz", "amazon.simple-web.org"],
 //  "github.com": ["gh.odyssey346.dev", "gh.riverside.rocks", "gh.vern.cc", "gh.akisblack.dev", "gh.phreedom.club"],
+//  "akkoma.social": ["bdx.town"],
+//  "tankerkoenig.de": ["petrolpricesv2.netlify.app"],
+//
+//  Valid alternatives where end user loses nothing, not frontends
+//
+//  "www.speedtest.net": ["openspeedtest.com"]
 //  "music.apple.com": ["cider.sh"],
 //  "www.noisli.com": ["noizee.esmailelbob.xyz"],
 };
