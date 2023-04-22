@@ -2,10 +2,18 @@
 // @name        Quicklink Loader
 // @icon        https://getquick.link/assets/images/icons/favicon-32x32.png
 // @match       *://*/*
-// @exclude     *://search.brave.com/*
 // @exclude     *://github.com/*
+// @exclude     *://gitlab.com/*
+// @exclude     *://pairdrop.net/*
+// @exclude     *://snapdrop.net/*
+// @exclude     *://search.*/*
+// @exclude     *://mail.*/*
+// @exclude     *://calendar.*/*
+// @exclude     *://drive.*/*
+// @exclude     *://messages.*/*
+// @exclude     *://*bank*/*
 // @grant       none
-// @version     1.1.3
+// @version     1.1.4
 // @author      NoUser
 // @description Quicklink is a JavaScript library that speeds up subsequent page loads by intelligently prefetching resources. This userscript adds Quicklink to every webpage, preloading links that the user is likely to click. By prefetching these resources, the next page loads faster, improving the overall browsing experience.
 // @namespace   https://greasyfork.org/en/scripts/459274-quicklink-loader
