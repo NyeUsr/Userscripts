@@ -3,6 +3,8 @@
 Easily access open-access versions of academic articles with the click of a button. Say goodbye to paywalls and hello to knowledge.<br><br>
 **[Privacy Frontend Redirect](https://github.com/NyeUsr/Userscripts/raw/main/Privacy%20Frontend%20Redirect.user.js)** -<br>
 This script redirects to privacy friendly front-ends of popular services, such as YouTube, Twitter, Reddit, Imgur, Instagram, TikTok, etc. Additionally, it replaces iframes and outgoing links to non frontend services with their privacy-friendly counterparts.<br><br>
+**[Google Search Improvements](https://github.com/NyeUsr/Userscripts/blob/main/Google%20Search%20Improvements.user.js)** -<br>
+Remove tracking and unnecessary parameters from Google Search URLs. Keeps only essential params. Adds udm=14 if only 'q' remains.<br><br>
 **[Quicklink Loader](https://github.com/NyeUsr/Userscripts/raw/main/Quicklink%20Loader.user.js)** -<br>
 Quicklink is a JavaScript library that speeds up subsequent page loads by intelligently prefetching resources. This userscript adds Quicklink to every webpage, preloading links that the user is likely to click. By prefetching these resources, the next page loads faster, improving the overall browsing experience.<br><br>
 **[Page Load Time](https://github.com/NyeUsr/Userscripts/raw/main/Page%20Load%20Time.user.js)** -<br>
